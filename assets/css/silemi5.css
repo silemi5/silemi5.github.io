@@ -1,0 +1,29 @@
+* {
+    border-radius: 0px !important;
+}
+
+.emj-intro {
+    height: 100vh;
+    background: url('../img/e.jpg');
+    background-size: cover;
+}
+
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.emj-navbar-color {
+    background-color: #107c10 !important;
+}
+
+.segment {
+    padding-top: 2rem;
+}
+
+footer {
+    padding-top: 2rem;
+}

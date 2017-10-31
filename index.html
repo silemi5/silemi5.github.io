@@ -5,14 +5,164 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>Home</title>
-        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/silemi5.css">
     </head>
 
     <body>
-        <h1>Hello World!</h1>
+        <header>
+            <nav class="navbar fixed-top navbar-expand-lg">
+                <a class="navbar-brand" href="#">silemi5</a>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </nav>
+        </header>
+        <main>
+            <div class="jumbotron jumbotron-fluid emj-intro">
+                <div class="container">
+                    <h1 class="display-3">Emir M. Jo Jr.</h1>
+                    <h4>
+                        <span class="badge badge-info">Back-end web developer</span>
+                        <span class="badge badge-primary">PHP</span>
+                        <span class="badge badge-secondary">Laravel</span>
+                        <span class="badge badge-danger">Databases</span>
+                    </h4>
+                    <p class="col-md-6 col-sm-12 lead">
+                        Just a lonely programmer with big dreams.
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <h3 class="display-4 text-center">Showcase</h3>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/img/teckquiz.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">TeckQuiz</h4>
+                            <p class="card-text">
+                                An Online Quiz Management System built on Laravel.
+                            </p>
+                        </div>
+                        
+                        <a href="http://damp-tundra-88811.herokuapp.com/" class="card-footer text-light text-center" style="background-color: #00B294">View demo</a>
+                    </div>
+                </div>
+                <div class="col-4">
+
+                </div>
+                <div class="col-4">
+                    
+                </div>
+            </div>
+            <div class="container segment">
+                <h2 class="text-center">About me</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <h4>Adapting</h4>
+                        <p>We programmers must adapt to ever-changing ecosystems.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <h4>Nortunal <span class="h5 text-muted">(almost)</span></h4>
+                        <p>Perfect for coding sleepovers.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <h4>Flexibility</h4>
+                        <p>From Java to VB6 to dotNET to PHP, knowledge never stops!</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <h4>Student</h4>
+                        <p>Proud student of Western Mindanao State University!</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="container segment">
+                <h3 class="text-center">Ping me!</h3>
+                <div class="row text-center">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="http://github.com/silemi5">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="http://www.facebook.com/emirjojr">Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="http://twitter.com/silemi5">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <p class="text-muted">Created using Bootstrap 4.0</p>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
         
         <script src="./assets/js/jquery-3.2.0.min.js"></script>
+        <script src="./assets/js/popper.js"></script>
         <script src="./assets/js/bootstrap.min.js"></script>
+
+        <script>
+            /**
+            * Listen to scroll to change header opacity class
+            */
+            function checkScroll(){
+                var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+                if($(window).scrollTop() > startY){
+                    $('.navbar').addClass("emj-navbar-color");
+                    $('.navbar').addClass("navbar-dark");
+                    $('.navbar').removeClass("navbar-light");
+                }else{
+                    $('.navbar').removeClass("emj-navbar-color");
+                    $('.navbar').removeClass("navbar-dark");
+                    $('.navbar').addClass("navbar-light");
+                }
+            }
+
+            if($('.navbar').length > 0){
+                $(window).on("scroll load resize", function(){
+                    checkScroll();
+                });
+            }
+        </script>
         
     </body>
 </html>
