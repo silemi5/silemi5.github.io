@@ -1,67 +1,120 @@
-.first{
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+.first-text{
+    padding: 5rem;
+    padding-top: 13rem;
 }
+
+.first-logo{
+    background-color: #243A51;
+}
+
+.first-text + .first-logo{
+    height: 80vh;
+}
+
+.first-text > h1{
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 4rem;
+    color: #243A51;
+}
+
+.first-text > p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    color: #1F78D1;
+}
+
 .second{
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    padding: 2rem;
+    background-color: #222222;
+    color: white;
 }
+
+.second > h1{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.second > .list-group-flush > .list-group-item{
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+    background-color: #222222;
+    font-size: 1.5rem;
+}
+
 .third{
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    padding: 2rem;
+}
+
+.third > h1{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.third-projects{
+    margin-bottom: 3rem;
+}
+
+.third-projects > h4{
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.third-projects > small{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+    color: #1F78D1;
+}
+
+.third-projects > p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.20rem;
+}
+
+.third-projects > p > a{
+    color: black;
+}
+
+.fourth{
+    padding: 2rem;
+    background-color: whitesmoke;
+    color: black;
+}
+
+h2.fourth-headline{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .social-media > a > img{
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
-.section-heading{
-    padding-bottom: 0.7rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 3px solid grey;
-    text-align: center;
-}
-
-.terminal-top{
-    height: 30px;
-    border-radius: 4px 4px 0 0;
-    border-top: thin solid grey;
-    border-bottom: thin solid grey;
-    background: grey;
-}
-
-.terminal-body{
-    height: 50%;
-    background-color: #212121;
-}
-
-.terminal-body-text{
-    font-family: "Consolas";
-    color: whitesmoke;
-    padding-top: 1rem;
-    padding-left: 1rem;
-}
-
-.terminal-body-text > p{
-    margin-bottom: 0;
-}
-
-.skills > p{
-    margin-bottom: 0;
-}
-
-.skills > .inside-skills > p{
-    margin-bottom: 0;
-    padding-left: 5px;
+.social-media > a{
+    /* margin-left: 1rem; */
+    display: inline-block;
+    margin: 2rem;
+    font-family: "Roboto";
+    color: black;
+    font-size: 1.2rem;
 }
 
 footer{
-    color: white;
-    margin-top: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: #0f0f0f;
+    background-color: #243A51;
+    padding: 1rem;
+    color: whitesmoke;
+}
+
+.footer-text > p{
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
