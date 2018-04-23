@@ -4,7 +4,17 @@
 }
 
 .first-logo{
+    height: 100vh;
     background-color: #243A51;
+    background-image: url('../img/logo.svg');
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center;
+    /* background: #243A51 url('../img/logo.svg') no-repeat; */
+}
+
+.first-logo:hover{
+    background-color: rgb(36, 80, 81);
 }
 
 .first-text + .first-logo{
