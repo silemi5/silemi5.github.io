@@ -22,7 +22,7 @@
 }
 
 .first-text > h1{
-    font-family: "Roboto";
+    font-family: 'Open Sans', sans-serif;
     font-weight: 900;
     font-size: 4rem;
     color: #243A51;
@@ -41,7 +41,7 @@
 }
 
 .second > h1{
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -60,7 +60,7 @@
 }
 
 .third > h1{
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -71,7 +71,7 @@
 }
 
 .third-projects > h4{
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 2rem;
     margin-bottom: 0;
@@ -99,7 +99,7 @@
 }
 
 h2.fourth-headline{
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -113,7 +113,7 @@ h2.fourth-headline{
     /* margin-left: 1rem; */
     display: inline-block;
     margin: 2rem;
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     color: black;
     font-size: 1.2rem;
 }
