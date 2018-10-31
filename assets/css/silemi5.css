@@ -1,0 +1,67 @@
+@media all {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+    }
+
+    nav {
+        text-align: left;
+        background-color: rgba(0, 255, 158, 0);
+        /* box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); */
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+
+    nav > ul > li.nav-link{
+        display: inline-block;
+        padding: 0 0.5rem;
+        color: white;
+    }
+
+    nav > p.nav-logo{
+        display: inline-block;
+        font-weight: 600;
+        color: white;
+    }
+
+    li.nav-logo > a, li.nav-link > a{
+        text-decoration: none;
+    }
+
+    .intro {
+        height: 90vh;
+        /* background-image: url('../img/leo.png'); */
+        background-color: salmon;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .intro-img {
+        width: 13rem;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    h1.name {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+@media screen and (max-width: 900px){
+    nav > ul > li.nav-link{
+        display: none;
+        padding: 0.5rem 1rem;
+    }
+}
