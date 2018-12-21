@@ -6,6 +6,14 @@
         color: black;
     }
 
+    .button {
+        text-decoration-line: none;
+        border: grey solid 1px;
+        background-color: grey;
+        border-radius: 3px;
+        padding: 0.3rem;
+    }
+
     nav {
         text-align: left;
         background-color: rgba(0, 255, 158, 0);
@@ -22,13 +30,19 @@
     nav > ul > li.nav-link{
         display: inline-block;
         padding: 0 0.5rem;
-        color: white;
+        color: black;
+        font-weight: 500;
     }
 
-    nav > p.nav-logo{
+    nav > ul > li.nav-link:hover{
+        /* border-style: solid; */
+        border-bottom: 4px solid rgb(17, 209, 110);
+    }
+
+    nav > .nav-logo{
         display: inline-block;
         font-weight: 600;
-        color: white;
+        color: #158265;
     }
 
     li.nav-logo > a, li.nav-link > a{
@@ -38,7 +52,7 @@
     .intro {
         height: 90vh;
         /* background-image: url('../img/leo.png'); */
-        background-color: salmon;
+        background-color: #15FF88;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -54,8 +68,110 @@
         margin-bottom: 1rem;
     }
 
-    h1.name {
+    .intro > h1.name {
+        font-size: 2rem;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .intro > p.description {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .skillset {
+        padding: 1.5rem;
+        background-color: whitesmoke;
+        height: 50vh;
+    }
+
+    .skillset > .heading{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .skills { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .skill {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        /* background-color: pink; */
+    }
+
+    .skillbar {
+        margin-top: 1rem;
+        border: 1px solid grey;
+        /* max-width: 70%; */
+    }
+
+    .skillbar > .skillbar-value {
+        background-color: #158265;
+        height: 26px;
+        color: whitesmoke;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .projects{
+        height: 70vh;
+        background-color: #158265;
+        padding: 1.5rem;
+    }
+
+    .projects > * {
+        color: white;
+    }
+
+    .projects > .project_entries {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .project {
+        border-radius: 4px;
+        padding: 1rem;
+        background-color: whitesmoke;
+        height: 20vh;
+    }
+
+    .contact {
+        height: 40vh;
+        background-color: whitesmoke;
+        padding: 1.5rem;
+    }
+
+    footer {
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+        background-color: #d0d0d0;
+    }
+
+    .social-links {
+        text-align: center;
+    }
+
+    .social-link {
+        display: inline-block;
+        margin: 2rem;
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    .social-link > a{
+        text-decoration: none;
+    }
+
+    .social-link > a  > i{
+        /* font-size: 4rem; */
+        display: block;
+        padding-bottom: 1rem;
+        color: #158265;
     }
 }
 
@@ -63,5 +179,14 @@
     nav > ul > li.nav-link{
         display: none;
         padding: 0.5rem 1rem;
+    }
+
+    .intro{
+        justify-content: center;
+    }
+
+    .intro > p.description {
+        text-align: center;
+        margin: 0 2rem;
     }
 }
